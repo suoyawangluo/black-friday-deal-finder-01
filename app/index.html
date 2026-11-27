@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deal Lantern — Black Friday 2026 deal finder</title>
+<meta name="description" content="A working Black Friday and Cyber Monday deal finder: 34 real deals, checked 27 Nov 2026, with search and filters by category, store and discount.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><span class="lantern" aria-hidden="true">🏮</span><div><h1>Deal Lantern</h1><p class="tag">Black Friday 2026 · real deals, checked today</p></div></div>
+    <p class="lede">Thirty-four Black Friday and Cyber Monday deals, each read in a deals source that names its store on Friday 27 November 2026. Search them, filter them, and see at a glance whether each one is really a deal.</p>
+    <p class="stats"><strong>34 deals</strong> · <strong>4 stores</strong> · <strong>8 categories</strong> · best cut <strong>−60%</strong> · checked <strong>27 Nov 2026, 14:40 CST</strong></p>
+  </div>
+</header>
+<main class="wrap">
+  <section id="finder" aria-label="Deal finder">
+    <div class="controls">
+      <label class="search-label">Search <input id="search" type="search" placeholder="Try “headphones”, “TV”, “LEGO”… " autocomplete="off"></label>
+      <label>Store <select id="store"></select></label>
+      <label>Min. discount <select id="min-discount"><option value="">Any</option><option value="15">15% or more</option><option value="30">30% or more</option><option value="50">50% or more</option></select></label>
+      <label>Sort <select id="sort"><option value="discount">Biggest discount</option><option value="saved">Most dollars saved</option><option value="price-asc">Lowest price</option><option value="price-desc">Highest price</option></select></label>
+    </div>
+    <div id="categories" class="chips" role="group" aria-label="Category"></div>
+    <p id="count" class="count" aria-live="polite"></p>
+    <div id="grid" class="grid"></div>
+  </section>
+  <section id="detail" hidden aria-label="Deal detail"></section>
+  <section class="method" aria-label="How the prices were checked">
+    <h2>How these prices were checked</h2>
+    <p>Every price on this page was read by the agent that built this finder on Friday 27 November 2026, around 14:40 CST, in a deals source that names the store — a retailer release, or a deals roundup from Tom's Guide, USA Today Reviewed, Mashable, GamesRadar, 9to5Google, MacRumors, DansDeals, DealNews, koupon.ai, petematheson, TechResearchOnline, 2ndShift, KCDesi, or Kohl's. The source is named on each card. Discounts are computed from the two prices shown, so they always add up.</p>
+    <p>The signal on each deal is honest: <strong>TRUE LOW</strong> means 50% or more off list, <strong>STRONG DEAL</strong> 30–49%, <strong>GOOD PRICE</strong> 15–29%, and <strong>ROUTINE SALE</strong> under 15% — a small cut on a new product is labelled as one. Store links go to the store's own site; prices move fast on Black Friday, so check the price there before you buy.</p>
+  </section>
+</main>
+<footer class="wrap"><p>Deal Lantern · Black Friday 2026 · Prices checked 27 Nov 2026, 14:40 CST · Store names are trademarks of their owners.</p></footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
